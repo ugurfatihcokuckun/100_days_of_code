@@ -29,7 +29,7 @@ scissors = '''
 
 choise = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n"))
 computer_choise = random.randint(0, 2)
-
+"""
 if choise == 0:
     print("Your choice")
     print(rock)
@@ -75,3 +75,24 @@ elif choise == 2:
         print("Computer choise\n")
         print(scissors)
         print("Tie!")
+"""
+
+"""
+game_images = [rock, paper, scissors]
+if choise >= 3 or choise < 0:
+    print("You typed an invalid number, you lose!")
+else:
+    print(game_images[choise])
+    print("Computer choice: \n")
+    print(game_images[computer_choise])
+    if choise == 0 and computer_choise == 2:
+        print("You win!")
+    elif choise == 2 and computer_choise == 0:
+        print("You lose!")
+    elif computer_choise > choise:
+        print("You lose!")
+    elif choise > computer_choise:
+        print("You win!")
+    elif computer_choise == choise:
+        print("Tie!")
+"""
